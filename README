@@ -1,0 +1,69 @@
+****************
+* Warmup Project
+* CS 221
+* May 11, 2018
+* Rohit Gangurde
+**************** 
+
+OVERVIEW:
+
+This particular warmup project helps read, create and edit grid and its data with the use of 2-D arrays which helps in determining the danger points of cell explosion with the help of surrounding sum, its average and delta. 
+
+INCLUDED FILES:
+
+1. 	GridMonitorTest.java - source file 
+2.	GridMonitor.java - source file 
+3.	GridMonitorInterface.java - source file 
+4.	sample.txt 
+5.	sample4x5.text 
+6.	negatives.txt 
+7.	wideRange.text  
+8.	sampleDoubles.txt  
+9.	onebyone.txt  
+10.	README 
+
+COMPILING AND RUNNING:
+
+ From the directory containing all source files, compile the
+ driver class (and all dependencies) with the command:
+ $ javac GridMonitor.java
+ $ javac GridMonitorTest.java
+
+ Run the compiled class file with the command:
+ $ java GridMonitorTest
+
+ Console output will give the results after the program finishes.
+
+
+PROGRAM DESIGN AND IMPORTANT CONCEPTS:
+
+The program was designed in such a way that it first scanned for the dimensions before anything else. It helps set up the grid. The file was later scanned which help in setting up the table data. This was possible with the help of for nested loop. 
+
+This helped me set up the conditions through which I was able to calculate the surrounding sum with its average and delta which determined whether the cell was going to explode or not with the help of boolean data type. Each of this had its own loop.
+
+At the very end of various methods, which were created through the importation of GridMonitorInterface, values were returned where I made sure that those values did not change anywhere else by storing them in another variable in that very method.
+
+
+TESTING:
+
+The GridMonitorTest class was already created which once ran tested all of the GridMonitor class. The GridMonitor class implemented GridMonitorInterface which helped us through the methods and we were able to return all the required values and helped us determine whether the program was correct or not. 
+ 
+The testing helped me broaden the range and type of input and helped create a more revised program to determine the cell explosion.
+
+
+DISCUSSION:
+
+Since this project was just a warm-up and had a lot of concept from CS 121 I didn’t have many issues with the program. I followed design pattern which I stated in PROGRAM DESIGN AND IMPORTANT CONCEPTS and was able to go through the process with ease.
+
+The major issue I had was by the end where some conditions had to be added to make sure the program is accessible when different dimensions were given. Plus I had to make sure that the values I pass are not changed in the another class while being tested so I stored the data in a different variable before passing in the method.  
+
+Overall I checked what was about to be tested after running the program through which I was instantly able to correct them with any struggle. I also had to override the toString method to prevent failing one of the tests. So I returned our basic grid in the toString method.
+ 
+ 
+EXTRA CREDIT:
+
+N/A
+
+----------------------------------------------------------------------------
+
+
